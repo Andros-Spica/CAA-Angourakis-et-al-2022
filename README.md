@@ -1,3 +1,4 @@
+[![DOI](https://zenodo.org/badge/523552683.svg)](https://zenodo.org/badge/latestdoi/523552683)
 # Foodways, Nutrition, and Demography in the Indus Village model
 Presentation for the session "Formal modelling and models of social complexity - in concepts, numbers, equations and agents" (S12) in the "Computer Applications & Quantitative Methods in Archaeology" (CAA) 2022 - “Inside Information” conference (8-11 August 2022)
 
