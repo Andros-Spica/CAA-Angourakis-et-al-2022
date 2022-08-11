@@ -1,0 +1,889 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Foodways, Nutrition, and Demography in the Indus Village model</title>
+
+		<meta name="description" content="Made with Reveal.JS, A framework for easily creating beautiful presentations using HTML, by Hakim El Hattab">
+		<meta name="author" content="Andreas Angourakis">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="reveal.js-master/dist/reset.css">
+		<link rel="stylesheet" href="reveal.js-master/dist/reveal.css">
+		<link rel="stylesheet" href="reveal.js-master/dist/theme/sky.css" id="theme">
+		
+		<!-- Custom modifications to structure slides -->
+		<link rel="stylesheet" href="myMods.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="reveal.js-master/plugin/highlight/zenburn.css" id="highlight-theme">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+
+	<body>
+		<div class="reveal">
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+            	<section data-state="title-page">
+					<h3>Foodways, Nutrition, and Demography<br>in the Indus Village model</h3>
+					<p>
+						<small>
+							<a href="https://reform.ressourcencampus-bochum.de/en/the-people-behind-reform/" target="_blank">Andreas <b>Angourakis</b></a>
+							(<a href="https://twitter.com/AndrosSpica" target="_blank">@AndrosSpica</a>),
+							<a href="https://humanities.snu.ac.kr/en/faculty?deptidx=12&md=view&profidx=199" target="_blank">Jennifer <b>Bates</b></a>
+							(<a href="https://twitter.com/DrJenniferBates" target="_blank">@DrJenniferBates</a>),<br>
+							<a href="https://eutopia-university.eu/english-version/research/sif-post-doctoral-fellowships/akshyeta-suryanarayan-pompeu-fabra-university-barcelona" target="_blank">
+								Akshyeta <b>Suryanarayan</b>
+							</a>,
+							<a href="https://www.arch.cam.ac.uk/directory/cap59" target="_blank">Cameron A. <b>Petrie</b></a>
+						</small>
+					</p>
+					<div style="font-size: 50%">available at 
+						<a href="https://andros-spica.github.io/CAA-Angourakis-et-al-2022/" target="_blank">https://andros-spica.github.io/CAA-Angourakis-et-al-2022/</a><br>
+						<a href="https://andros-spica.github.io/CAA-Angourakis-et-al-2022/index.html?print-pdf" target="_blank">https://andros-spica.github.io/CAA-Angourakis-et-al-2022/index.html?print-pdf</a> (printable version)
+					</div>
+					<br>
+					<img src="images/logo-combo_2022_UPF.png" alt="Logos"
+					style="width: 800px; border: none; box-shadow: none;"/>
+
+					<aside class="notes">
+						Today I will present the approach to modelling local food economies 
+						taken in developing the Indus Village model,
+						within the context of the TwoRains ERC project.
+					</aside>
+				</section>
+				
+				<section>
+					<section data-background="https://gamepedia.cursecdn.com/minecraft_gamepedia/6/63/The_13w22a_Banner.png?version=c9547c31873e81c2fcff3b56461a4da5">
+						<br><br><br><br><br>
+						<h3 style="background-color: beige;"><b style="color:black">1.</b> 
+							<i style="color:crimson">Indus Village overview</i></h3>
+						<a style="font-size: 33%; color: black; background-color: beige; opacity: 50%;" href="https://minecraft.gamepedia.com/File:The_13w22a_Banner.png" target="_blank">
+							Image source: Minecraft Wiki (&copy; Mojang Studios), via Gamepedia
+						</a>
+						
+						<aside class="notes">
+							First, a brief overview of our modelling programme
+							and the advancements made so far. 
+						</aside>
+					</section>
+
+					<section>
+						<h3>End-goals</h3>
+						<p>
+							Explore human <b style="color: crimson">adaptation to the variability</b><br>
+							in landscapes of <i style="color:royalblue">NW India</i> during the <i style="color: royalblue">Mature Harappan</i> (urban phase of the Indus Civilisation)
+						</p>
+						<p class="fragment">
+							Expose the <b style="color: crimson">sustainability</b> of 
+							<i style="color:royalblue">food production regimes</i>,<br>
+							mainly in terms of <i style="color: crimson">cropping strategies</i>, <br>
+							in front of <i style="color:royalblue">climate change</i>
+						</p>
+						
+						<aside class="notes">
+							The Two Rains modelling programme was set to explore human adaptation to the 
+							variability in landscapes of NW India during the Mature Harappan.
+							Specifically, we focused on the surroundings of the sites in Haryana 
+							studied by Two Rains and former projects.
+							|
+							Our aim is to expose the sustainability of food production regimes, 
+							especially in terms of the diversity of cropping strategies,
+							and if and how this diversity was favourable or adverse to urbanisation.
+						</aside>
+					</section>
+
+					<section>
+						<img src="images/Household-model-infograph-v6_p11.png" alt="Goal model p11"
+							style="border: none; box-shadow: none"/>
+						
+						<aside class="notes">
+							
+							First, we defined what we believe are essential elements of rural, food-producing settlements.
+							Our approach was to re-imagine an integral, yet blurry picture of what village life in the Indus 
+							would look like, based on known archaeological evidence, but also on minimum assumptions informed 
+							by parallels in space and time.
+							|
+							In a broad sense, these elements include:
+							| Climate: more specifically the weather conditions related to solar radiation, temperature and precipitation. 
+							| Land: which includes soil, water and cover.
+							| Food production: mainly crops, which translate the condition of land and climate into foodstuff.
+							| A human population: organised in households and groups and inhabiting a settlement.
+							| The demography rulling the dynamics of this population,
+							| The nutritional budget that regulates its health,
+							| The diet that feeds into it,
+							| and the food production economy that describes how production, distribution and storage of foodstuffs happens.
+							| A exchange system that connects agents to other agents, and to agents in settlements outside the local economy.
+							| And finally, bonding all together, the decision-making process that households would go through 
+							to chose and revise their food production strategies, particularly in terms of the triplet use-conditions-investment.
+							|
+							Everything strictly within a small scale, 
+							with one-hectare land units covering a total area of twenty-five kilometres squared, 
+							and with processes being iterated up to a daily basis.
+						</aside>
+					</section>
+					
+					<section>
+						<div id="left50" class="r-stack">
+							<img src="images/00-OverallDesign.png" alt="Indus Village design"
+							style="width: 400px; border: none; box-shadow: none"/>
+							<img class="fragment" src="images/00-OverallDesign_LandCrop.png" alt="land crop"
+							style="width: 400px; border: none; box-shadow: none"/>
+							<img class="fragment" src="images/00-OverallDesign_HouseholdFoodEconomy.png" alt="food economy"
+							style="width: 400px; border: none; box-shadow: none"/>
+						</div>
+						<div id="left50">
+							<br>
+							Modular</b> design<br>
+							<a href="https://github.com/Andros-Spica/indus-village-model/blob/master/diagrams/RoadMapSoFar_2021-05.png" target="_blank">
+								<img src="images/RoadMapSoFar_2021-05.png" alt="road map so far"
+									style="width: 250px; border: none; box-shadow: none"/>
+							</a>
+							
+							<ul style="font-size: 50%;">
+								<li class="fragment">Implementation in <i style="color: crimson">NetLogo</i>, documentation in <i style="color: royalblue">pseudocode diagrams</i> and <i style="color: royalblue">R markdown</i></li>
+								<li class="fragment"><i style="color: crimson">parameter</i> exploration (sensitivity analysis)</li>
+								<li class="fragment"><i style="color: crimson">scenarios</i> (parameters, programmed trends<br>and changes, alternative algorithms)</li>
+							</ul>
+						</div>
+						
+						<aside class="notes">
+							Deriving from this general picture, we represented all these aspects 
+							as submodels or parts of submodels, highlighted here in blue.
+							These submodels are intentionally designed as modules,
+							meaning they can function independently as models, if the required input is given.
+							Besides the advantage in terms of code stability and extensibility,
+							our hope is that each of these submodels can be more easily re-used by others in the future.
+							|
+							The full version of the Indus Village model is still under development.
+							Here I will concentrate on those parts that are fully consolidated and explored. 
+							We are thus leaving aside the submodels dealing strictly with human-related mechanisms.
+							| 
+							The model is implemented in NetLogo in a modular and progressive manner, 
+							while each part is also thoroughly documented with pseudo-code diagrams and 
+							R markdown demonstrations. 
+							| 
+							To properly understand the model at each stage of complexity, 
+							we are performing extensive sensitivity analyses. 
+							| 
+							To inform and test our hypotheses, we perform experiments designed to 
+							represent scenarios, particularly by varying parameters, programming trends and changes,
+							and using alternative designs.
+						</aside>
+					</section>
+
+					<section>
+						<p style="font-size: 50%;">
+							<a href="https://doi.org/10.1088/1748-9326/abacf9" target="_blank">
+								Angourakis A, Bates J, Baudouin J-P, Giesche A, Ustunkaya M C,<br>
+								Wright N, Singh R N and Petrie C A. 2020.<br>
+								How to ‘downsize’ a complex society: an agent-based modelling approach to assess the resilience of Indus Civilisation settlements to past climate change.<br>
+								Environmental Research Letters, 15:115004.<br>
+								DOI: 10.1088/1748-9326/abacf9
+							</a>
+						</p>
+						
+						<p style="font-size: 50%;">
+							<a href="https://doi.org/10.3390/quat5020025" target="_blank">
+								Angourakis A, Bates J, Baudouin J-P, Giesche A, Walker J R,<br>
+								Ustunkaya M C, Wright N, Singh R N and Petrie C A. 2022.<br> 
+								‘Weather, Land and Crops in the Indus Village Model: A Simulation Framework for Crop Dynamics under Environmental Variability and Climate Change in the Indus Civilisation’.<br>
+								Quaternary 5 (2): 25.<br>
+								DOI: 10.3390/quat5020025
+							</a>
+						</p>
+
+						<aside class="notes">
+							You can check more details on our approach and the overall design of the Indus Village model 
+							in our most recent publication.
+						</aside>
+					</section>
+
+				</section>
+			
+				<section>
+					<section data-background-position="center top" data-background="https://openthemagazine.com/wp-content/uploads/2017/06/Civilisational1.jpg">
+						<br><br><br><br><br>
+						<h3 style="background-color: beige;"><b style="color:black">2.</b> 
+							<i style="color:crimson">Food economy in the Indus Civilisation</i></h3>
+						<a style="font-size: 33%; color: black; background-color: beige; opacity: 50%;" href="https://openthemagazine.com/features/archaeology/what-they-ate-in-the-indus-valley/" target="_blank">
+							Image source: Lhendup G Bhutia in openthemagazine.com (&copy; Mojang Studios)
+						</a>
+						
+						<aside class="notes">
+							Next, we will briefly present the what do we know 
+							about the Indus Civilisation food economy, and what are 
+							the challenges to be faced in terms of design choices and data input.
+							We will then do an overview of the concepts behind the submodels 
+							we use to represent the food economy cycle 
+							and how they are combined into a higher integrated 
+							model, stepping towards the full integration of 
+							the Indus Village model. 
+						</aside>
+					</section>
+
+					<section>
+						<div id="left50">
+							<a title="Petrie & Bates 2017, J. J World Prehist, 30:81, Fig. 3" 
+								href="https://doi.org/10.1007/s10963-017-9101-z" target="_blank">
+								<img width="350" alt="Petrie & Bates 2017, Fig. 3" 
+								src="https://media.springernature.com/lw785/springer-static/image/art%3A10.1007%2Fs10963-017-9101-z/MediaObjects/10963_2017_9101_Fig3_HTML.gif">
+							</a>
+							<br>
+							<i style="font-size: 33%">
+							<a title="Petrie & Bates 2017, J. J World Prehist, 30:81, Fig. 3" 
+								href="https://doi.org/10.1007/s10963-017-9101-z" target="_blank">
+								Petrie & Bates 2017
+							</a> |
+							<a title="Bates 2019, J. Open Arch. Data" 
+								href="https://doi.org/10.5334/joad.57" target="_blank">
+								Bates 2019
+							</a> | 
+							<a title="Bates 2020, Arch. Res. Asia" 
+								href="https://doi.org/10.1016/j.ara.2019.100175" target="_blank">
+								Bates 2020
+							</a> | 
+							<a title="Bates, Petrie & Singh 2018,  Archaeol Anthropol Sci, 10:1703, Fig. 8" 
+								href="https://doi.org/10.1007/s12520-017-0489-2" target="_blank">
+								Bates, Petrie & Singh 2018
+							</a>
+							</i>
+						</div>
+						<div id="right50">
+							<br><br>
+							<h4>Archaeobotany</h4>
+							<ul style="font-size: 66%">
+								<li>barley/wheat (winter)</li>
+								<li>millet/rice (summer)</li>
+								<li>Pulses and other crops</li>
+								<li>Non-crops (e.g. fruits)</li>
+								<li>Plants for other uses</li>
+							</ul>
+							<br>
+							<a title="Bates, Petrie & Singh 2018,  Archaeol Anthropol Sci, 10:1703, Fig. 8" 
+								href="https://doi.org/10.1007/s12520-017-0489-2" target="_blank">
+								<img width="350" alt="Bates, Petrie & Singh 2018, Fig. 8" 
+								src="https://media.springernature.com/lw785/springer-static/image/art%3A10.1007%2Fs12520-017-0489-2/MediaObjects/12520_2017_489_Fig8_HTML.gif">
+							</a>
+						</div>
+
+						<aside class="notes">
+							Agriculture was likely the main pilar of the Indus food economy.
+							The crops cultivated were ancient varieties of wheat and barley (grown during winter or rabi season),
+							various millets and rice (grown in pre and post monsoon or zaid and kharif seasons), 
+							among many others.
+							One key aspect raised in previous research is how farmers managed seasonality and climate
+							variation, particularly if and how multi-cropping was performed. 
+						</aside>
+					</section>
+
+					<section>
+						<div id="left50">
+							<a title="Bassem 18 at the English language Wikipedia [CC BY-SA 3.0 (http://creativecommons.org/licenses/by-sa/3.0/)], via Wikimedia Commons" 
+								href="https://commons.wikimedia.org/wiki/File:Water_buffalo.jpg" target="_blank">
+								<img width="215" alt="Water buffalo" src="https://upload.wikimedia.org/wikipedia/commons/1/1d/Water_buffalo.jpg">
+							</a>
+							<a title="Pavanaja [CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0)], via Wikimedia Commons" 
+							href="https://commons.wikimedia.org/wiki/File:Hariana_02.JPG" target="_blank">
+							<img width="215" alt="Hariana 02" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Hariana_02.JPG/512px-Hariana_02.JPG">
+							</a>
+							<a title="nubra valley herding goats" 
+							href="https://pxhere.com/en/photo/1289867?utm_content=shareClip&utm_medium=referral&utm_source=pxhere" target="_blank">
+							<img width="215" src="https://c.pxhere.com/photos/e4/cb/goats_plateau_highlands_ladakh_india_nubra_valley_mountain_pass_nubra-1289867.jpg!d" srcset="https://c.pxhere.com/photos/e4/cb/goats_plateau_highlands_ladakh_india_nubra_valley_mountain_pass_nubra-1289867.jpg!d" alt="landscape, wilderness, mountain, snow, mountain range, flock, wildlife, goat, herd, livestock, sheep, mammal, goats, stones, mountains, plateau, sheeps, india, yak, highlands, tundra, ladakh, himalayas, mountain pass, karg, nubra, sparse, shepherds, goatherd, mountainous landforms, cattle like mammal, khardung la, nubra valley, mountain living, Free Images In PxHere">
+							</a>
+							<a title="Emőke Dénes [CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0)], via Wikimedia Commons" 
+							href="https://commons.wikimedia.org/wiki/File:Sheep_India_3.jpg" target="_blank">
+							<img width="215" alt="Sheep India" src="https://upload.wikimedia.org/wikipedia/commons/7/75/Sheep_India_3.jpg">
+							</a>
+							<a title="fishing in the Indus" 
+							href="https://www.harappa.com/blog/indus-river-fishing-and-fishmongers-look-back" target="_blank">
+							<img width="215" alt="fishing Indus" src="https://www.harappa.com/sites/default/files/indus-fishing.jpg">
+							</a>
+							<a title="Pascal Maître, CC BY-SA 3.0 IGO &lt;https://creativecommons.org/licenses/by-sa/3.0/igo/deed.en&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Mohana_fishermen_hunters_use_lures_from_real_birds_to_catch_more_birds.jpg">
+							<img width="215" alt="Mohana fishermen hunters use lures from real birds to catch more birds" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Mohana_fishermen_hunters_use_lures_from_real_birds_to_catch_more_birds.jpg/512px-Mohana_fishermen_hunters_use_lures_from_real_birds_to_catch_more_birds.jpg">
+							</a>
+						</div>
+						<div id="right50">
+							<br><br>
+							<h4>Zooarchaeology</h4>
+							<ul style="font-size: 66%">
+								<li><b>Animal husbandry:</b><br>zebu, water buffalo, sheep, goat, pig(?), chicken(?)</li>
+								<li>Fishing: freshwater fish and molluscs</li>
+								<li>Hunting: wild ruminants, hare, birds</li>
+							</ul>
+							<br>
+							<i style="font-size: 33%">
+								<a title="Joglekar, Sharada & Abhayan 2013" 
+									href="https://www.researchgate.net/publication/321675654_Faunal_Diversity_during_the_Harappan_Period_in_Haryana_A_Review" target="_blank">
+									Joglekar, Sharada & Abhayan 2013
+								</a> |
+								<a title="Chase, Meiggs & Ajithprasad 2020" 
+									href="https://doi.org/10.1016/j.jaa.2020.101173" target="_blank">
+									Chase, Meiggs & Ajithprasad 2020
+								</a>
+								<br>
+								<a title="Abhayan et al. 2020" 
+									href="https://doi.org/10.1016/j.jasrep.2020.102547" target="_blank">
+									Abhayan et al. 2020
+								</a> |
+								<a title="Lightfoot et al. 2020" 
+									href="https://doi.org/10.1016/j.ara.2020.100212" target="_blank">
+									Lightfoot et al. 2020
+								</a> |
+								<a title="LJ Miller 2004" 
+									href="https://www.proquest.com/dissertations-theses/urban-economies-early-states-secondary-products/docview/305167169/se-2" target="_blank">
+									LJ Miller 2004
+								</a> |
+								RP Wright 2010
+							</i>
+							<br>
+							Role of herding?
+						</div>
+
+						<aside class="notes">
+							Animal husbandry is also thought to have been central in the Indus food economy.
+							together with other activities such as hunting and fishing, which are still widely present today.
+							Particularly, several authors have raised the hypothesis of mid-to-long 
+							distance herding as having a role not only in food economy,
+							but in shaping trade and cultural diversity the region.
+						</aside>
+					</section>
+						
+					<section>
+						<div id="left40">
+							<a title="The National Museum “Historical Gastronomica - The Indus Dining Experience” event in New Delhi" href="https://www.jatinverma.org/what-did-the-harappan-people-really-eat">
+								<img width="300" src="https://www.jatinverma.org/uploads/2020_02/pasted_image_0_(8)4.png">
+							</a>
+							<a title="Clockwise: Sauteed offals, braised Parwal, stuffed chickpea, braised fowl, salt cured tender lamb Source: Neera Majumdar | ThePrint" href="https://theprint.in/opinion/i-ate-the-non-vegetarian-harappan-meal-and-had-no-beef-with-it/370492/">
+								<img width="300" src="https://static.theprint.in/wp-content/uploads/2020/02/WhatsApp-Image-2020-02-25-at-10.17.26-AM.jpeg?compress=true&quality=80&w=800&dpr=1.3">
+							</a>
+							<a title="Mutton Liver fry or 'Kaleji masala', a popular non-vegetarian recipe from India and Pakistan. Source: Telegraph India" href="https://www.telegraphindia.com/india/harappa-era-food-show-shies-out-of-non-veg-selections/cid/1747261">
+								<img width="300" alt="Mutton Liver fry or 'Kaleji masala', a popular non-vegetarian recipe from India and Pakistan." src="https://assets.telegraphindia.com/telegraph/4e91b56a-e17a-453e-99cf-528083127828.jpg">
+							</a>
+						</div>
+						<div id="right60">
+							<br><br>
+							<h4>Residue Analysis</h4>
+							<ul style="font-size: 66%">
+								<li>C3 vs C4 plants signature</li>
+								<li>Meat vs secondary products</li>
+								<li>Ruminant vs non-ruminant fat</li>
+							</ul>
+							<br>
+							<i style="font-size: 50%">
+								<a title="Suryanarayan et al. 2021" 
+									href="https://doi.org/10.1016/j.jas.2020.105291" target="_blank">
+									Suryanarayan et al. 2021
+								</a>
+							</i>
+							<br>
+							<i style="font-size: 66%;">Stewing or roasting?<br>Are contemporary culinary practices a good reference?</i>
+						</div>
+
+						<aside class="notes">
+							Other bioarchaeological analyses have contributed to our understanding of Indus foodways,
+							but also raised additional challenges to be tackled in the future,
+							such as, in lipid analyses, the confounding effect of C3/C4 plants as direct ingredients
+							or as fodder of animals under different feeding regimes.
+							A polemic still surrounds the validity of holding certain contemporary 
+							culinary practices as references to understanding those in the ancient Indus.
+						</aside>
+					</section>
+
+					<section>
+						<h4>Food exchange</h4>
+						<a title="Biswarup Ganguly, CC BY 3.0 &lt;https://creativecommons.org/licenses/by/3.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Indus_Valley_Civilization_-_Science_and_Technology_Heritage_of_India_Gallery_-_Science_Exploration_Hall_-_Science_City_-_Kolkata_2016-02-22_0507.JPG">
+							<img width="450" alt="Indus Valley Civilization - Science and Technology Heritage of India Gallery - Science Exploration Hall - Science City - Kolkata 2016-02-22 0507" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Indus_Valley_Civilization_-_Science_and_Technology_Heritage_of_India_Gallery_-_Science_Exploration_Hall_-_Science_City_-_Kolkata_2016-02-22_0507.JPG/512px-Indus_Valley_Civilization_-_Science_and_Technology_Heritage_of_India_Gallery_-_Science_Exploration_Hall_-_Science_City_-_Kolkata_2016-02-22_0507.JPG">
+						</a>
+						<a title="Biswarup Ganguly, CC BY 3.0 &lt;https://creativecommons.org/licenses/by/3.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Indus_Valley_Diorama_-_Indian_Science_and_Technology_Heritage_Gallery_-_National_Science_Centre_-_New_Delhi_2014-05-06_0805.JPG">
+							<img width="450" alt="Indus Valley Diorama - Indian Science and Technology Heritage Gallery - National Science Centre - New Delhi 2014-05-06 0805" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Indus_Valley_Diorama_-_Indian_Science_and_Technology_Heritage_Gallery_-_National_Science_Centre_-_New_Delhi_2014-05-06_0805.JPG/512px-Indus_Valley_Diorama_-_Indian_Science_and_Technology_Heritage_Gallery_-_National_Science_Centre_-_New_Delhi_2014-05-06_0805.JPG">
+						</a>
+						<br>
+						<i style="font-size: 66%">
+							Household autonomy, local reciprocity and/or market-like economy?
+						</i>
+						<br>
+						<i style="font-size: 33%">RP Wright 2010</i>
+						
+						<aside class="notes">
+							Food redistribution is an interesting, yet widely unexplored aspect.
+							There are, of course, abundant evidence for exchange of a variety of materials, 
+							including organic materials, reaching even relatively far partners,
+							such as the Sumerian cities.
+							Would food exchange be relevant to the subsistence of villages though?
+						</aside>
+					</section>
+				</section>
+			
+				<section>
+					<section data-background="https://www.gamersdecide.com/sites/default/files/styles/news_images/public/best_food_minecraft.png">
+						<br><br><br><br><br>
+						<h3 style="background-color: beige;"><b style="color:black">3.</b> 
+							<i style="color:crimson">Household Food Economy model</i></h3>
+						<a style="font-size: 33%; color: black; background-color: beige; opacity: 50%;" href="https://www.gamersdecide.com/articles/minecraft-best-food" target="_blank">
+							Image source: Danica Torreja in gamersdecide.com (&copy; Mojang Studios)
+						</a>
+						
+						<aside class="notes">
+							We are currently working on the integration of the next milestone model,
+							the Household Food Economy model, which aims at a minimum yet sufficient 
+							representation of the dynamics in food economy at the household level.
+						</aside>
+					</section>
+
+					<section>
+						<img src="images/HouseholdFoodEconomy.png" alt="food economy infographic"
+								style="width: 800px; border: none; box-shadow: none"/>
+
+						<aside class="notes">
+							The model targets the food economy cycle defined as a sequence of processes
+							happening on a household scale, spanning from the obtention of foodstuffs 
+							to the disposition of labour and dietary preferences towards food production.
+						</aside>
+					</section>
+
+					<section>
+						<a href="https://github.com/Andros-Spica/indus-village-model/blob/master/diagrams/RoadMap_HouseholdFoodEconomy_2022-04.png" target="_blank">
+							<img src="images/RoadMap_HouseholdFoodEconomy_2022-04.png" alt="road map food economy"
+								style="width: 600px; border: none; box-shadow: none"/>
+						</a>
+
+						<aside class="notes">
+							The Household Food Economy model integrates five submodels:
+							the Food Strategy, 
+							Food Storage, 
+							Food Exchange, 
+							Nutrition, and 
+							Household Demography models
+						</aside>
+					</section>
+
+				</section>
+
+				<section>
+					
+					<section>
+						<h4>Food Storage model</h4>
+						<br>
+						
+						<img src="images/Storage model.png" alt="food storage infographic"
+								style="width: 800px; border: none; box-shadow: none"/>
+
+						<aside class="notes">
+							Households obtain a series of foodstuff amounts in different moments of the annual 
+							calendar through different processes modelled in other parts of the Indus Village,
+							particularly the Land Crop model. 
+							These amounts are accounted for as stocks of foodstuff that are stored, exchanged, 
+							and consumed.
+							Food consumption is calculated daily for the entire household based on its members, 
+							and assuming that households pursue the satisfaction of a diet. 
+							Diet is here a composition of foodstuff amounts 
+							and it is modelled as a cultural trait specific to households.
+						</aside>
+					</section>
+
+					<section>
+						<h4>Food Storage model</h4>
+						<br>
+						<a href="https://github.com/Andros-Spica/indus-village-model/blob/master/screenshots/06-storage%20interface.png" target="_blank">
+							<img src="https://github.com/Andros-Spica/indus-village-model/blob/master/screenshots/06-storage%20interface.png?raw=true" alt="screenshot storage"
+								style="border: none; box-shadow: none"/>
+						</a>
+						<br>
+						<i style="font-size: 50%">
+						<a href="https://github.com/Andros-Spica/indus-village-model/blob/master/06-storage-model" target="_blank">
+							Link to code (repository)
+						</a> | documentation under development
+						</i>
+					</section>
+					
+				</section>
+
+				<section>
+					
+					<section>
+						<h4>Food Exchange model</h4>
+						<br>
+						
+						<img src="images/Exchange model.png" alt="food exchange infographic"
+								style="width: 800px; border: none; box-shadow: none"/>
+
+						<aside class="notes">
+							Households can also engage on food exchange, as "sellers", 
+							if having surplus, or "buyers", if having shortage.
+							After each stock-sized transaction is made, they may complement their diet,
+							if lacking in the first place.
+							There are still open questions regarding the terms of exchange transactions.
+							As a preliminary approach, we are distinguishing local exchange as being
+							based on open reciprocity or based on a voluntary redistribution institution.
+							In the long term, we are interested in how other, possibly overlapping, exchange systems
+							such as market-like economies affected the local food economy. 
+						</aside>
+					</section>
+
+					<section>
+						<h4>Food Exchange model</h4>
+						<br>
+						<a href="https://github.com/Andros-Spica/indus-village-model/blob/master/screenshots/06-storage%20interface_withExchange.png" target="_blank">
+							<img src="https://github.com/Andros-Spica/indus-village-model/blob/master/screenshots/06-storage%20interface_withExchange.png?raw=true" alt="screenshot exchange"
+								style="border: none; box-shadow: none"/>
+						</a>
+						<br>
+						<i style="font-size: 50%">
+						<a href="https://github.com/Andros-Spica/indus-village-model/blob/master/06-storage-model" target="_blank">
+							Link to code (repository)
+						</a> | documentation under development
+						</i>
+					</section>
+					
+				</section>
+
+				<section>
+					
+					<section class="fragments">
+						<br>
+						<h4>Nutrition model</h4>
+						<br>
+						<img src="images/Nutrition model.png" alt="nutrition infographic"
+								style="width: 800px; border: none; box-shadow: none"/>
+						<br>
+								<i class="fragment">
+									Yay, Andreas, please show us those tables!
+								</i>
+
+						<aside class="notes">
+							The food effectively consumed is translated 
+				   			into nutrient amounts, and distributed among household members. Nutrient amounts are 
+				   			compared to the members' specific sex-age requirements, producing a household-level 
+				   			nutrition score. 
+						</aside>
+					</section>
+
+					<section>
+						<img src="images/nutritionTablesSneakPeak.png" alt="nutrition tables"
+								style="width: 800px; border: none; box-shadow: none"/>
+					</section>
+
+					<section>
+						<h4>Nutrition model</h4>
+						<br>
+						<a href="https://github.com/Andros-Spica/indus-village-model/blob/master/screenshots/07-nutrition%20interface.png" target="_blank">
+							<img src="https://github.com/Andros-Spica/indus-village-model/blob/master/screenshots/07-nutrition%20interface.png?raw=true" alt="screenshot exchange"
+								style="border: none; box-shadow: none"/>
+						</a>
+						<br>
+						<i style="font-size: 50%">
+						<a href="https://github.com/Andros-Spica/indus-village-model/blob/master/07-nutrition-model" target="_blank">
+							Link to code (repository)
+						</a> | 
+						<a href="https://github.com/Andros-Spica/indus-village-model/tree/master/07-nutrition-model/documentation" target="_blank">
+							Calculation of Nutrition score (diagram)
+						</a>
+						<br>
+						other documentation under development
+						</i>
+					</section>
+					
+				</section>
+
+				<section>
+					
+					<section class="fragments">
+						<br>
+						<h4>Household Demography model</h4>
+						<br>
+						<img src="images/householdDemography_structure.png" alt="Household structure"
+							style="width: 600px; border: none; box-shadow: none"/>
+
+						<aside class="notes">
+							Next, the nutrition score is used to condition the dynamics of a individual-based demographic simulation,
+							the Household Demography model. 
+							The Household Demography model relies on a simplified representation of 
+							individual household members, however keeping track of individual properties, 
+							particularly sex and age.
+							This approach also allows us to hold information of life stories that are key to
+							model realistically social relationships within and among households.
+						</aside>
+					</section>
+
+					<section>
+						<img src="images/demographySubmodels.png" alt="demography submodels"
+								style="width: 500px; border: none; box-shadow: none"/>
+						<br>
+						<i style="font-size: 50%;">
+						Fertility & Nuptiality: <a href="https://www.jstor.org/stable/26347932">Peristeva & Kostaki 2007</a>; <a href="http://dx.doi.org/10.25336/P6TK56">2015</a>
+						<br>
+						Mortality: Coale, Demeny, & Vaughan 1983 | Jones 2007, <a href="https://cran.r-project.org/package=demogR">demogR</a> package
+						</i>
+						<aside class="notes">
+							The Household Demography model is in fact composed by three separate equation-based submodels, 
+							the Fertility, Nuptiality and Mortality models,
+							which output the probability of an individual, respectively, to give birth (female), 
+							form a stable couple, or die, depending on their sex and age.
+							The household's nutrition score modulates the mortality model,
+							increasing or decreasing the reference probability of dying per each sex-age category.
+						</aside>
+					</section>
+
+					<section class="fragments">
+						<br>
+						<h4>Household Demography model</h4>
+						<i style="font-size: 66%;">Effect of nutrition over mortality</i>
+						<br>
+						<img src="images/HouseholdDemography_code_get-net-mortality-of-day.png" alt="code mortality with nutrition"
+							style="width: 700px; border: none; box-shadow: none"/>
+
+						<aside class="notes">
+							The nutrition score is used to condition the outcome of the mortality submodel 
+							following an algorithmic approach (which is a preliminary solution) where a negative score will increase
+							linearly the probability of dying while a positive score will decrease 
+							it with diminishing intensity.
+						</aside>
+					</section>
+
+					<section class="fragments">
+						<br>
+						<h4>Household Demography model</h4>
+						<i style="font-size: 66%;">Household growth and formation</i>
+						<br>
+						<img src="images/householdDemography_coupleFormation.png" alt="couple formation"
+							style="width: 700px; border: none; box-shadow: none"/>
+
+						<aside class="notes">
+							
+						</aside>
+					</section>
+
+					<section>
+						<h4>Household Demography model</h4>
+						<br>
+						<div class="r-stack">
+							<img src="images/householdDemography v.1.3 - daily time step interface_growth.png" alt="screenshot exchange"
+								style="border: none; box-shadow: none"/>
+							<img class="fragment" src="images/householdDemography v.1.3 - daily time step interface_extinction.png" alt="screenshot exchange"
+								style="border: none; box-shadow: none"/>
+							<img class="fragment" src="images/householdDemography v.1.3 - daily time step interface_bootleneckExtinction.png" alt="screenshot exchange"
+								style="border: none; box-shadow: none"/>
+							<img class="fragment" src="images/householdDemography v.1.3 - daily time step interface_growthCycles.png" alt="screenshot exchange"
+								style="border: none; box-shadow: none"/>
+						</div>
+						<br>
+						<i style="font-size: 50%">
+						<a href="https://github.com/Andros-Spica/indus-village-model/tree/master/05-household-demography" target="_blank">
+							Link to code (repository)
+						</a> | 
+						<a href="https://github.com/Andros-Spica/indus-village-model/tree/master/07-nutrition-model/documentation" target="_blank">
+							Calculation of Nutrition score (diagram)
+						</a>
+						<br>
+						other documentation under development
+						</i>
+					</section>
+					
+				</section>
+
+				<section>
+					<h4>Calculation of labour</h4>
+					<img src="images/labour-infograph.png" alt="labour function"
+					style="width: 500px; border: none; box-shadow: none"/>
+					<img src="images/labour-equation.png" alt="labour-equation"
+					style="width: 350px; border: none; box-shadow: none"/> 
+
+					<aside class="notes">
+						Each household holds an ever-changing population, 
+				   		from which an age-dependent amount of labour is made available, 
+						part of which is invested back into food production activities.
+					</aside>
+				</section>
+
+				<section>
+					
+					<section>
+						<h4>Food Strategy model</h4>
+						<br>
+						
+						<img src="images/Food Strategy model.png" alt="food strategy infographic"
+								style="width: 800px; border: none; box-shadow: none"/>
+
+						<aside class="notes">
+							To close the food economy cycle, the Food Strategy model determines how 
+							households apply a learning algorithm to steer their food production strategy, specifically 
+				   			regarding which activities to invest labour in, considering diet 
+							satisfaction as the fundamental target.
+						</aside>
+					</section>
+
+					<section>
+						<h4>Food Strategy model</h4>
+						<br>
+						Design principles:<br>
+						<ul style="font-size: 50%;">
+							<li>reinforced learning</li>
+							<li>stimulus for change as degree of diet shortages</li>
+							<li>food strategy &rightarrow; triplet use/activity, conditions, investment</li>
+							<li>challenge: multidimensional state space, tryouts with high stakes</li>
+						</ul>
+						<br>
+						<i style="font-size: 50%">
+							code and documentation under development
+						</i>
+					</section>
+					
+				</section>
+
+				<section class="fragments">
+					<h3><i style="color: slateblue">Conclusions</i></h3>
+					<ul style="font-size: 80%;">
+						<li class="fragment">Modelling mechanisms: KIDS | Modelling data: KISS<br>
+							<a href="https://link.springer.com/chapter/10.1007/978-3-540-32243-6_11">(Edmonds & Moss 2004)</a>
+						</li>
+						<li class="fragment">Socio-ecological models can/should make use of sources in multiple disciplines</li>
+						<li class="fragment">modularity and patience needed for stabilise simulation as a method in archaeology</li>
+					</ul>
+						
+					<aside class="notes">
+						
+					</aside>
+				</section>
+
+				<section>
+					<h3>'TwoRains' project</h3>
+					<h4>ERC, 2015-2021</h4>
+					
+					<br>
+					<ul>
+						<li><a href="https://www.arch.cam.ac.uk/research/projects/two-rains" target="_blank">Institutional Web page</a></li>
+						<li><a href="https://github.com/Two-Rains/indus-village-model" target="_blank">Indus Village model repository</a></li>
+					</ul>
+						
+					<aside class="notes">
+						If you would like to know more about this work and our project in general,
+						please visit our project page, our blog and the GitHub repository where 
+						all materials related to the Indus Village model can be found. 
+					</aside>
+				</section>
+
+				<section>
+					<h3>Acknowledgements</h3>
+					<p style="font-size: 66%">
+						Thanks to the <b style="color: slateblue">Land, Water and Settlement</b> and <b style="color: crimson">TwoRains</b> teams:<br><br>
+						Aftab Alam, Alessandro Ceccarelli, Sagorika Chakraborty, 
+						Sudarshan Chakradhari, Arti Chowdhary, Yama Dixit, Charly French, Adam Green, 
+						Henry Green, Lily Green, David Hodell, Penny Jones, Carla Lancelotti, Emma Lightfoot, Frank Lynam, 
+						Sayantani Neogi, Hector Orengo, Arun Kumar Pandey, Danika Parikh, Vikas Pawar, Amit Ranjan,
+						David Redhouse, Dheerendra Pratab Singh, & Akshyeta Suryanarayan.
+						<br><br>
+						Special thanks also to the Department of AIHC and Archaeology, BHU, the European Research Council (ERC), 
+						and the UK-India Education and Research Initiative (UKIERI) for support and funding, and to the Archaeological 
+						Survey of India for permission to carry out the work.
+					</p>
+						
+					<aside class="notes">
+						I would like to thank our project members and collaborators, 
+						without them this work would not be possible.  
+					</aside>
+
+				</section>
+
+				<section data-background="https://thumbs.gfycat.com/PepperyCalculatingGemsbok-size_restricted.gif">
+					<br><br><br><br><br>
+					<p style="background-color: beige; color: black;"><i style="color: crimson;">THANK YOU</i> FOR YOUR ATTENTION!</p>
+					<div style="font-size: 50%; color: black; background-color: beige;">available at 
+						<a href="https://andros-spica.github.io/CAA-Angourakis-et-al-2022/" target="_blank">https://andros-spica.github.io/CAA-Angourakis-et-al-2022/</a><br>
+						<a href="https://andros-spica.github.io/CAA-Angourakis-et-al-2022/index.html?print-pdf" target="_blank">https://andros-spica.github.io/CAA-Angourakis-et-al-2022/index.html?print-pdf</a> (printable version)
+					</div>
+					<a style="font-size: 33%; color: black; background-color: beige; opacity: 50%;" href="https://www.minecraft.net/en-us/article/block-week-chest" target="_blank">
+						Image source: gfycat (&copy; Mojang Studios)
+					</a>
+						
+					<aside class="notes">
+						Thank you for your attention 
+						and I hope you enjoyed this presentation!
+					</aside>
+				</section>
+				
+			</div>
+		</div>
+
+		<script src="reveal.js-master/dist/reveal.js"></script>
+        <script src="reveal.js-master/plugin/zoom/zoom.js"></script>
+		<script src="reveal.js-master/plugin/notes/notes.js"></script>
+		<script src="reveal.js-master/plugin/search/search.js"></script>
+		<script src="reveal.js-master/plugin/markdown/markdown.js"></script>
+		<script src="reveal.js-master/plugin/highlight/highlight.js"></script>
+
+		<script src="reveal.js-menu/menu.js"></script>
+		<script src="reveal.js-plugins/audio-slideshow/plugin.js"></script>
+		<script src="reveal.js-plugins/audio-slideshow/RecordRTC.js"></script>
+		<script src="reveal.js-plugins/audio-slideshow/recorder.js"></script>
+
+		<script>
+
+			// Also available as an ES module, see:
+			// https://revealjs.com/initialization/
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+				mouseWheel: true,
+				slideNumber: 'c/t',
+/*
+				audio: {
+					prefix: 'audio/',
+					suffix: '.webm',
+					defaultDuration: 5,
+					textToSpeechURL: "http://api.voicerss.org/?key=f02cebf4e99c493d8a0048fde8a96278&hl=en-gb&c=ogg&src=",
+					advance: 0,
+					autoplay: false,
+					defaultNotes: false,
+					defaultText: false,
+					playerOpacity: 0.5
+				},
+
+				menu: { // Menu works best with font-awesome installed: sudo apt-get install fonts-font-awesome
+					themes: false,
+					transitions: false,
+					markers: true,
+					hideMissingTitles: true
+				},
+
+				keyboard: { 
+					82: function() { Recorder.toggleRecording(); },	// press 'r' to start/stop recording
+					90: function() { Recorder.downloadZip(); }, 	// press 'z' to download zip containing audio files
+					84: function() { Recorder.fetchTTS(); } 	// press 't' to fetch TTS audio files
+  				},
+*/
+				plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight, RevealMenu
+					//,RevealAudioSlideshow, RevealAudioRecorder
+					]
+			});
+
+		</script>
+	</body>
+	<div id="background-header">
+		<div style="text-align:left; position:absolute; top:3%; left: 10%; font-size:100%; color:gray">
+			<i>CAA 2022<br>University of Oxford</i>
+		</div>
+		<div style="text-align:left; position:absolute; top:3%; right: 10%; font-size:100%; color:gray">
+			<b>Angourakis et al.<br>10-11 August 2022</b>
+		</div>
+		<div style="text-align:right; position:absolute; top:9%; right: 10%; font-size:100%; color:gray">
+			<b><a style="color: darkcyan;" href="https://andros-spica.github.io/CAA-Angourakis-et-al-2022/">https://andros-spica.github.io/CAA-Angourakis-et-al-2022/</a></b>
+		</div>
+	</div>
+</html>
